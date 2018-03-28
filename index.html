@@ -4,24 +4,65 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ThiccIndustries 3.0</title>
+<div class="error">ThiccIndustries</div>
+<br /><br />
+<br /><br />
+<hr>
+<div style="background-color:#cccccc">
+<iframe src ="https://drive.google.com/embeddedfolderview?id=1QAAgBX7lhURj3RN0Tc47hNBvXJuadVNH#list" width=40% height=91% style="position: absolute;"></iframe>
+<iframe src="Features.html" width = 10% height = 91% style="position:absolute;left:41%" frameBorder="0"></iframe>
+</div>
+<div class="error2" id="demo" style="position:absolute;top:100px;left:50%"></div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 11, " + ((new Date()).getFullYear() + 1) + " 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Happy 9/11 Everybody!";
+    }
+}, 1000);
+</script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Gilda+Display);
-
 html {
-  background: radial-gradient(#000, #111);
+  background: radial-gradient(#000, #292929);
   color: white;
   overflow: hidden;
-  height: 100%;
   user-select: none;
+  height: 100%;
 }
-
+h1{
+  font-size: 100px;
+}
 .static {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
-  top: -100px;
+  top: 0;
   opacity: 0.05;
   z-index: 230;
   user-select: none;
@@ -34,28 +75,36 @@ html {
   font-size: 5vh;
   font-style: italic;
   text-align: center;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
   margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -60px;
+  left: 0;
   right: 0;
   animation: noise 2s linear infinite;
   overflow: default;
 }
-
+.error2 {
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+  font-size: 5vh;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: noise 2s linear infinite;
+  overflow: default;
+}
 .error:after {
-  content: 'ThiccIndustries.ga';
+  content: 'ThiccIndustries';
   font-family: 'Gilda Display', serif;
   font-size: 5.5vh;
   font-style: italic;
   text-align: center;
-  width: 400px;
-  height: 60px;
-  line-height: 60px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -66,34 +115,12 @@ html {
   color: blue;
   animation: noise-1 .2s linear infinite;
 }
-
-.info {
-  text-align: center;
-  font-family: 'Gilda Display', serif;
-  font-size: 2vh;
-  font-style: italic;
-  text-align: center;
-  width: 400px;
-  height: 60px;
-  line-height: 60px;
-  margin: auto;
-  position: absolute;
-  top: 140px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: noise-3 1s linear infinite;
-}
-
 .error:before {
-  content: 'ThiccIndustries.ga';
+  content: 'ThiccIndustries';
   font-family: 'Gilda Display', serif;
-  font-size: 5.5vh;
+  font-size: 5.6vh;
   font-style: italic;
   text-align: center;
-  width: 400px;
-  height: 60px;
-  line-height: 60px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -102,9 +129,40 @@ html {
   right: 0;
   opacity: 0;
   color: red;
-  animation: noise-2 .2s linear infinite;
+  animation: noise-2 .5s linear infinite;
 }
-
+.error2:after {
+  content: 'When will it end?';
+  font-family: 'Gilda Display', serif;
+  font-size: 5.5vh;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: blue;
+  animation: noise-1 .2s linear infinite;
+}
+.error2:before {
+  content: 'The timer knows all';
+  font-family: 'Gilda Display', serif;
+  font-size: 5.6vh;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: red;
+  animation: noise-2 .5s linear infinite;
+}
 @keyframes noise-1 {
   0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
   10% {opacity: .1;}
@@ -136,8 +194,5 @@ html {
 </style>
 </head>
 <body>
-<div class="error">ThiccIndustries.ga</div>
-<br /><br />
-<span class="info">Is Under Construction</span>
 </body>
 </html>
