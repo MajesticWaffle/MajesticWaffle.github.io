@@ -29,6 +29,10 @@
 		background-repeat:   no-repeat;
 		background-position: top left;   
 	}
+	#itemsborder
+	{
+		cursor:move;  
+	}
 	body{
 	background-color: #008080;
  	-webkit-background-size: cover;
