@@ -110,10 +110,32 @@ function pauseAudio() {
 <div id="itemsheader">|</div>
 <iframe src="Features.html" width = 20% height = 90% style="position:relative;top:1vh;left:-40%;max-width: 300px;border-radius: 20px; overflow: hidden;" frameBorder="0"></iframe>
 <div>
-<iframe src ="https://drive.google.com/embeddedfolderview?id=1QAAgBX7lhURj3RN0Tc47hNBvXJuadVNH#list" width=78% height=90% style="position: relative; top: -630px; left: 90px"></iframe>
+<iframe id="yeets" src ="https://drive.google.com/embeddedfolderview?id=1QAAgBX7lhURj3RN0Tc47hNBvXJuadVNH#list" width=78% height=90% style="position: relative; top: -630px; left: 9.5%"></iframe>
 </div>
 </div>
 </center>
+<script>
+var width = screen.width;
+var height = screen.height;
+document.getElementById('items').style.width = '800px';
+document.getElementById('items').style.height = '600px';
+document.getElementById('yeets').style.top = '-530px';
+if (width >= 1280 && height >= 1024){
+document.getElementById('items').style.width = '960px';
+document.getElementById('items').style.height = '720px';
+document.getElementById('yeets').style.top = '-630px';
+}
+if (width >= 1920 && height >= 1080){
+document.getElementById('items').style.width = '1024px';
+document.getElementById('items').style.height = '768px';
+document.getElementById('yeets').style.top = '-675px';
+}
+if (width >= 2560 && height >= 1440){
+document.getElementById('items').style.width = '1280px';
+document.getElementById('items').style.height = '960px';
+document.getElementById('yeets').style.top = '-830px';
+}
+</script>
 <script>
 //Make the DIV element draggagle:
 dragElement(document.getElementById("items"));
