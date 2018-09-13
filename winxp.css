@@ -24,7 +24,14 @@
 	}
 	#items
 	{
-		border-radius: 20px;
+		background-image: url("winxpwin.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
+	#itemsborder
+	{
+		cursor:move;  
 	}
 	body{
 	background-image: url("winxp.jpg");

@@ -42,6 +42,10 @@ var curtime = new Date(),
     curday = curtime.getDate(),
     curmonth = curtime.getMonth()+1;
 link.href = "win98.css";
+if(curmonth == 8 && curday == 24) //windows xp theme
+	link.href = "winxp.css";
+if(curmonth == 6 && curday == 25) //windows 98 release
+	link.href = "win98.css";
 link.type = "text/css";
 link.rel = "stylesheet";
 link.media = "screen,print";
