@@ -47,10 +47,17 @@ if(curmonth == 8 && curday == 24) //windows xp theme
 if(curmonth == 6 && curday == 25) //windows 98 release
 	link.href = "win98.css";
 var S = window.location.href;
+if(curmonth == 4 && curday == 3 && !(S.includes("?=ps2done"))) //ps2 release
+	 window.location.replace("test1.html");
+
 if(S.includes("?=forcexp"))
 	link.href = "winxp.css";
 if(S.includes("?=force98"))
 	link.href = "winxp.css";
+if(S.includes("?=ps2done"))
+	link.href = "ps2.css";
+if(S.includes("?=forceps2"))
+	link.href = "ps2.css";
 link.type = "text/css";
 link.rel = "stylesheet";
 link.media = "screen,print";
@@ -111,11 +118,10 @@ function pauseAudio() {
 
 	
 <script src="widget.js"></script>
-
 <center><h1>World's Bestest Website</h1><center>
 <h2 id="splash" style="position: absolute;width: 100%;text-align: center;top:6%"></h2>	
 <center>
-<div id ="items" style = "position:absolute; left:20vw;background-color:rgba(122, 122, 122, 0.7);width: 960px;height: 720px;overflow: hidden;">
+<div id ="items" style = "position:absolute; left:20vw;width: 960px;height: 720px;overflow: hidden;">
 <div id="itemsheader">|</div>
 <iframe src="Features.html" width = 20% height = 90% style="position:relative;top:1vh;left:-40%;max-width: 300px;border-radius: 20px; overflow: hidden;" frameBorder="0"></iframe>
 <div>
