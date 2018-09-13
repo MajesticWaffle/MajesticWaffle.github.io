@@ -46,6 +46,11 @@ if(curmonth == 8 && curday == 24) //windows xp theme
 	link.href = "winxp.css";
 if(curmonth == 6 && curday == 25) //windows 98 release
 	link.href = "win98.css";
+var S = window.location.href;
+if(S.includes("?=forcexp"))
+	link.href = "winxp.css";
+if(S.includes("?=force98"))
+	link.href = "winxp.css";
 link.type = "text/css";
 link.rel = "stylesheet";
 link.media = "screen,print";
