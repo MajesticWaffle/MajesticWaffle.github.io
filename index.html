@@ -133,6 +133,7 @@ function pauseAudio() {
 <script>
 var width = screen.width;
 var height = screen.height;
+var S = window.location.href;
 document.getElementById('items').style.width = '800px';
 document.getElementById('items').style.height = '600px';
 document.getElementById('yeets').style.top = '-530px';
@@ -151,6 +152,28 @@ document.getElementById('items').style.width = '1280px';
 document.getElementById('items').style.height = '960px';
 document.getElementById('yeets').style.top = '-830px';
 }
+//manual mode
+if (S.includes("?=force86")){
+document.getElementById('items').style.width = '800px';
+document.getElementById('items').style.height = '600px';
+document.getElementById('yeets').style.top = '-530px';
+}	
+if (S.includes("?=force97")){
+document.getElementById('items').style.width = '960px';
+document.getElementById('items').style.height = '720px';
+document.getElementById('yeets').style.top = '-630px';
+}
+if (S.includes("?=force17")){
+document.getElementById('items').style.width = '1024px';
+document.getElementById('items').style.height = '768px';
+document.getElementById('yeets').style.top = '-675px';
+}
+if (S.includes("?=force19")){
+document.getElementById('items').style.width = '1280px';
+document.getElementById('items').style.height = '960px';
+document.getElementById('yeets').style.top = '-830px';
+}	
+
 </script>
 <script>
 //Make the DIV element draggagle:
