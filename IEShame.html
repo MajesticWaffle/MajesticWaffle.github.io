@@ -1,9 +1,9 @@
 <html>
 <head>
-<title>IE SHAME</title>
+<title>IE Shame</title>
 	<style>
 		h1{
-			font-size: 140px;
+			font-size: 144px;
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		}
 		h1,h2,p{
@@ -17,26 +17,29 @@
     		margin-right: auto;
     		width: 24%;
 		}
-				body{
+		body{
 	background-color: #008080;
  	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 	}
+	img.yeet {
+		width: 100%; /*Tells image to fit to width of parent container*/
+	}
+	.container {
+		width: 33%; /*Use this to control width of the parent container, hence the image*/
+		    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+	}
 	</style>
-	<center>
-		<h1>IE Detected!</h1>
-		<h2 style="position: absolute;top: 120px;width: 100%; text-align: center;">Get a modern browser, idiot.</h2>
-	</center>
 </head>
 
 <body>
-  <audio autoplay>
-  	<source src="404.mp3" type="audio/mpeg">
-	Your browser does not support the audio element, your loss.
-  </audio>
-  <img src="new404image.png" class="center"></img>
-	<center><p style="color: white;">How did you even get here.</p></center>
+  
+  <div class="container">
+   <img src="newIE.png" class="yeet" height=""></img>
+</div>
 </body>
 </html>

@@ -24,19 +24,22 @@
   	-o-background-size: cover;
   	background-size: cover;
 	}
+	img.yeet {
+		width: 100%; /*Tells image to fit to width of parent container*/
+	}
+	.container {
+		width: 33%; /*Use this to control width of the parent container, hence the image*/
+		    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+	}
 	</style>
-	<center>
-		<h1>404</h1>
-		<h2 style="position: absolute;top: 120px;width: 100%; text-align: center;">We could not find what you were looking for, it probably doesn't exist.</h2>
-	</center>
 </head>
 
 <body>
-  <audio autoplay>
-  	<source src="404.mp3" type="audio/mpeg">
-	Your browser does not support the audio element, your loss.
-  </audio>
-  <img src="new404image.png" class="center"></img>
-	<center><p style="color: white;">Stop mucking around my website.</p></center>
+  
+  <div class="container">
+   <img src="new404.png" class="yeet" height=""></img>
+</div>
 </body>
 </html>
