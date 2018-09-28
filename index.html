@@ -98,7 +98,7 @@ frames['iframe1'].document.head.appendChild(cssLink);
 		'Recomended Resolution: 1280x1024'
 		];
 		var randomNumber = Math.floor(Math.random()*textArray.length);
-		document.getElementById("splash").textContent = textArray[randomNumber];
+		typewriter(textArray[randomNumber]);
 		if(curmonth == 8 && curday == 24) //windows xp theme
 			document.getElementById("splash").textContent = "Windows XP Released Today!";
 		if(curmonth == 6 && curday == 25) //windows 98 release
@@ -106,7 +106,7 @@ frames['iframe1'].document.head.appendChild(cssLink);
 		if(curmonth == 7 && curday == 22) //windows 7 release
 			document.getElementById("splash").textContent = "Windows 7 Released Today!";
 	}
-	setInterval(randomSplash, 6000);
+	setInterval(randomSplash, 10000);
 </script>
 </head>
 <body>
@@ -240,7 +240,19 @@ function dragElement(elmnt) {
   }
 }
 </script>
+<Script>
+var i = 0;
+var speed = 50;
+function typeWriter(String txt) {
+  if (i < txt.length) {
+    document.getElementById("splash").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
 <script>randomSplash();</script>
 <script onload="yeet();" src ="dragdiv.js"  ></script>
+
 </body>
 </html>
