@@ -1,0 +1,57 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/crt.css">
+	<style>
+		body{
+			background-color:rgb(20, 20, 20);
+		}
+		p.terminal{
+			color:rgb(12, 255, 0);
+		}
+	</style>
+</head>
+<body>
+<div class="crt"> 
+<p class="terminal" id="text">Rom check: OK </br></p>
+<script>
+		var textArray = [
+    	'Loaded High Ram: 64 MB </br>',
+    	'IDE Master: Detected </br>',
+		'IDE Slave: Detected </br>',
+		'Loading MS-DOS </br>',
+		'C:\\',
+		'G',
+		'r',
+		'e',
+		'a',
+		't',
+		'.',
+		'h',
+		't',
+		'm',
+		'l',
+		'</br>',
+		'.',
+		'.',
+		'.',
+		'</br>',
+		'GREATEST WEBSITE 6.0 </br>',
+		'Type HELP for list of commands </br>',
+		'#ROOT >_',
+		];
+		var currentLext = "Rom check: OK </br>"
+		var currentline = 0;
+		var flop = false;
+		var down = false;
+		function addText(){
+			if(currentline < (textArray.length)){
+				currentLext = currentLext + (textArray[currentline]);
+				document.getElementById("text").innerHTML = currentLext;
+				currentline = currentline + 1;
+				setTimeout(addText,Math.floor(Math.random()*500) + 400);
+			}
+		}
+		addText();
+</script>
+</div>
+</html>
