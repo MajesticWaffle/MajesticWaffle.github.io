@@ -12,9 +12,10 @@
 </head>
 <body>
 <div class="crt"> 
-<p class="terminal" id="text">Rom check: OK </br></p>
+<p class="terminal" id="text"></br></p>
 <script>
 		var textArray = [
+		'Rom check: OK </br>',
     	'Loaded High Ram: 64 MB </br>',
     	'IDE Master: Detected </br>',
 		'IDE Slave: Detected </br>',
@@ -26,20 +27,19 @@
 		'a',
 		't',
 		'.',
-		'h',
-		't',
-		'm',
-		'l',
+		'e',
+		'x',
+		'e',
 		'</br>',
 		'.',
 		'.',
 		'.',
 		'</br>',
-		'GREATEST WEBSITE 6.0 </br>',
+		'GREATEST WEBSITE</br>',
 		'Type HELP for list of commands </br>',
 		'#ROOT >_',
 		];
-		var currentLext = "Rom check: OK </br>"
+		var currentLext = ""
 		var currentline = 0;
 		var flop = false;
 		var down = false;
@@ -49,9 +49,36 @@
 				document.getElementById("text").innerHTML = currentLext;
 				currentline = currentline + 1;
 				setTimeout(addText,Math.floor(Math.random()*500) + 400);
+			}else{
+				// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    currentLext = currentLext + " Unlock in: " + days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+}, 1000);
 			}
 		}
 		addText();
+
 </script>
+
 </div>
 </html>
