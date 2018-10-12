@@ -9,8 +9,6 @@
 <meta name="KeyWords" content="Thicc Industries,Majesticwaffle,piracy,free,halo,quake,gta 3,grand,theft,auto,internet explorer">
 <title> The Goodest Website 98</title>
 </head>
-
-
 <!---Website Content--->
 <body>
 <center><h1 onclick="toggleWindow()">World's Bestest Website</h1><center>
@@ -29,5 +27,18 @@
 <script src="javascript/windowDrag.js"></script>
 <script>randomSplash();</script>
 <script>BrowserDetection();</script>
+<script type="text/javascript">
+var totalCount = 14;
+function ChangeIt()
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = 'newbg/'+num+'.jpg';
+document.body.style.background = "URL('newbg/" + num + ".jpg')";
+console.log("doing bg: " + num);
+//document.body.style.backgroundSize = "auto";// Background repeat
+}
+</script>
+
+<script>ChangeIt();</script>
 </body>
 </html>
