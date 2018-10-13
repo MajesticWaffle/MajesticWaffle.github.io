@@ -16,9 +16,10 @@
 		'Version 6',
 		'Mac OS > Windows 9x',
 		'PowerPC > Wintel',
-		'1280x1024 is god''s resoltion'
+		'1280x1024 is god\'s resoltion'
 		];
 		var randomNumber = Math.floor(Math.random()*textArray.length);
 		document.getElementById("splash").textContent = textArray[randomNumber];
 	}
+	randomSplash();
 	setInterval(randomSplash, 6000);// JavaScript Document
