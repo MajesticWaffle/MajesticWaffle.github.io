@@ -34,9 +34,7 @@
 		cursor:move;  
 	}
 	body{
+	background-image: url("../images/background.jpg");
 	background-color: RGB(58, 110, 165);
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+  	background-size: repeat;
 	}
