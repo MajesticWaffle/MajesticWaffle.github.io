@@ -24,17 +24,6 @@
 <script src="javascript/windowDrag.js"></script>
 <script>randomSplash();</script>
 <script>BrowserDetection();</script>
-<script>
-var totalCount = 44;
-function ChangeIt()
-{
-var num = Math.ceil( Math.random() * totalCount );
-document.body.background = 'newbg/'+num+'.jpg';
-document.body.style.background = "URL('newbg/ ("+ num +").jpg')";
-console.log("doing bg: " + num);
-//document.body.style.backgroundSize = "auto";// Background repeat
-}
-</script>
 <script>ChangeIt();</script>
 </body>
 </html>
