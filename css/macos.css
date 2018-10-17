@@ -15,7 +15,14 @@
     display: block;
 
 	}
-
+	object{
+		object-fit: cover;
+		width: 85%;
+		height: 100%;
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
 	a:hover 
 	{
     	color: white; 
@@ -30,6 +37,17 @@
 		background-position: top left;   
 	}
 	#itemsborder
+	{
+		cursor:move;  
+	}
+	#wallpaper
+	{
+		background-image: url("../images/backgroundselect.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
+	#wallpaperborder
 	{
 		cursor:move;  
 	}
