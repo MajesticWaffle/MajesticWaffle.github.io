@@ -42,7 +42,7 @@
 	}
 	#wallpaper
 	{
-		background-image: url("../images/backgroundselect.png");
+		background-image: url("../backgroundselect.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
