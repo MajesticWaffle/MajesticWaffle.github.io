@@ -55,4 +55,5 @@
 	background-image: url("../images/background.jpg");
 	background-color: RGB(58, 110, 165);
   	background-size: repeat;
+	overflow: hidden;
 	}
