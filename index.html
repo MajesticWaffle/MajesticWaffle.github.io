@@ -28,21 +28,5 @@
 <script>loadCached();</script>
 <script>randomSplash();</script>
 <script>BrowserDetection();</script>
-<script>
-function cacheWallpaper(id){
-	document.cookie = id;
-	document.body.style.backgroundImage = "url('newbg/  (" + id +").jpg')";
-}
-function loadCached(){
-	var cookie = document.cookie;
-	if(cookie){
-		document.body.style.background = "#f3f3f3 url('newbg/  (" + cookie + ").jpg') repeat right top";
-	}else{
-		document.body.style.background = "#f3f3f3 url('newbg/  (40).jpg') repeat right top";
-	}
-	
-}
-</script>
-<script>loadCached();</script>
 </body>
 </html>
