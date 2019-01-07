@@ -4,7 +4,7 @@
     		'IE Users are banned.',
     		'Abort, Retry, Fail?',
 		'No websites were harmed in the making of this website.',
-		'Fun Fact: There was only a 1/10 chance of seeing this.',
+		'Fun Fact: There was only a 1/16 chance of seeing this.',
 		'Designed for 4:3 Monitors.',
 		'Kernel Panic!',
 		'404: Subtitle not found.',
