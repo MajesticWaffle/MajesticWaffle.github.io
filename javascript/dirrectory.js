@@ -14,16 +14,11 @@ function midi(){
 	var textArray = [
 			'https://megamindchan.org/legacy/',
 			'http://friendlydads.net/',
-			'http://www.staggeringbeauty.com/',
-			'http://111111111111111111111111111111111111111111111111111111111111.com/',
 			'https://hooooooooo.com/',
-			'http://beesbeesbees.com/',
-			'http://timecube.2enp.com/',
 			'https://www.templeos.org/',
 			'https://pointerpointer.com/',
 			'https://crouton.net/',
 			'https://html5zombo.com/',
-			'http://tunnelsnakes.com/',
 			'http://tunnelsnakes.com/',
 			'https://bonzi.link/'
 		];
