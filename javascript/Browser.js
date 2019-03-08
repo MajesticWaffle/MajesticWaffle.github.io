@@ -18,5 +18,5 @@ function GetIEVersion() {
 if (GetIEVersion() > 0) 
    window.location.replace("http://majesticwaffle.github.io/IEShame.html");
 else 
-   document.getElementById("splash").innerHTML = "Powered by PowerPC G3";
+   document.getElementById("splash").innerHTML = "DOS Based Kernel";
 }

@@ -25,7 +25,7 @@
   	background-size: cover;
 	}
 	.container {
-		width: 358px; /*Use this to control width of the parent container, hence the image*/
+		width: 324px; /*Use this to control width of the parent container, hence the image*/
 		height: 130px;
 		background-image: url("images/newIE.png");
 		background-size:     cover;                      /* <------ */
@@ -82,17 +82,6 @@ function dragElement(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
-}
-</script>
-<script>
-var totalCount = 59;
-function ChangeIt()
-{
-var num = Math.ceil( Math.random() * totalCount );
-document.body.background = 'newbg/'+num+'.jpg';
-document.body.style.background = "URL('newbg/ ("+ num +").jpg')";
-console.log("doing bg: " + num);
-//document.body.style.backgroundSize = "auto";// Background repeat
 }
 </script>
 <script>ChangeIt();</script>

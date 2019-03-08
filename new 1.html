@@ -7,20 +7,25 @@
 			border-style: dashed;
 			border-color: rgb(12, 255, 0);
 		}
+		.draggable{
+			border-style: dashed;
+			border-color: rgb(12, 255, 0);
+		}
 		h1,h2{
-			color:rgb(12, 255, 0);
+			color:00FF00;
 			text-align:center;
 			font-family: DOS;
 
 		}
+		h1{font-size:6vh;}
 		a{
-			color:rgb(12, 255, 0);
+			color:00FF00;
 			text-indent: 5%;
 			font-family: DOS;
 			display: block;
 		}
 		p{
-			color:rgb(12, 255, 0);
+			color:00FF00;
 			text-indent: 7%;
 			font-family: DOS;
 		}
@@ -32,13 +37,19 @@
 </head>
 <body>
 <div class="crt"> 
-<h1>The World's Best Website</h1>
-<div>
-<a href="index.html">Classic Layout</a>
-<p>The Classic Windows 9x Style</p>
+<h1 id="Title">The Worlds Greatest Website</h1>
+<center><div class="draggable" id="items" style = "position:absolute; top:15vh;left:20vw;width: 800px;height: 600px;overflow: hidden;">
+<div id="itemsheader">|</div><div>
+<iframe id="yeets" src ="google.php" width=110% height=100% style="position: relative; top: 7.5px; left:-5px"></iframe>
+</div></div></center>
+</div>
 
-<a href="downloads.html">Downloads</a>
-<p>The Classic Windows 9x Style</p>
-</div>
-</div>
+<!---Load Javascript Files--->
+<script src="javascript/Browser.js"></script>
+<script src="javascript/Splash.js"></script>
+<script src="javascript/windowDrag.js"></script>
+<script src="javascript/wallpaperDrag.js"></script>
+<script>loadCached();</script>
+<script>randomSplash();</script>
+<script>BrowserDetection();</script>
 </html>

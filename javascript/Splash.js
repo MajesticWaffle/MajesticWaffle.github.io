@@ -1,22 +1,22 @@
 	function randomSplash(){
 
 		var textArray = [
-    		'IE Users are banned.',
-    		'Abort, Retry, Fail?',
+    	'IE Users are banned.',
+    	'Abort, Retry, Fail?',
 		'No websites were harmed in the making of this website.',
 		'Fun Fact: There was only a 1/16 chance of seeing this.',
 		'Designed for 4:3 Monitors.',
-		'Kernel Panic!',
+		'BSOD?',
 		'404: Subtitle not found.',
 		'Dres does not exist.',
-		'We do not acknowledge Fortnite\'s existence.',
+		'We do not acknowledge Apex Legends\'s existence.',
 		'Now on github.',
 		'Half-life > Half-life 2',
 		'it would appear that you exist, congrats',
-		'Version 6',
-		'Mac OS > Windows 9x',
-		'PowerPC > Wintel',
-		'1280x1024 is god\'s resolution'
+		'Version 7',
+		'Windows 98',
+		'CTRL-ALT-DELETE',
+		'800x600 is god\'s resolution',
 		];
 		var randomNumber = Math.floor(Math.random()*textArray.length);
 		document.getElementById("splash").textContent = textArray[randomNumber];
