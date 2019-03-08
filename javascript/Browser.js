@@ -18,5 +18,5 @@ function GetIEVersion() {
 if (GetIEVersion() > 0) 
    window.location.replace("http://majesticwaffle.github.io/IEShame.html");
 else 
-   document.getElementById("splash").innerHTML = "DOS Based Kernel";
+   document.getElementById("splash").innerHTML = "Back in blue!";
 }
