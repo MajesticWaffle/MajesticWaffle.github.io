@@ -37,6 +37,22 @@
 		background-repeat:   no-repeat;
 		background-position: top left;   
 	}
+	@font-face{
+		font-family: "DOS";
+		src: url('../fonts/MorePerfectDOSVGA.ttf') format('truetype');
+	}
+	#clock
+	{
+		font-size: 12px;
+		font-weight: normal;
+		font-family: DOS;
+		text-shadow: none;
+		color: black;file:///D:/NewFolders/Docs/GitHub/MajesticWaffle.github.io/images/taskbar-right.png
+	}
+	#taskbar
+	{
+		background-image: url("../images/taskbar-stretch.png"); 
+	}
 	#itemsborder
 	{
 		cursor:move;  
