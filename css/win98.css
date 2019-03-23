@@ -79,6 +79,14 @@
 	{
 		cursor:move;  
 	}
+	.clickable
+	{
+		cursor:pointer; 
+	}
+	.move
+	{
+		cursor:move; 
+	}
 	body{
 		background-color: RGB(58, 110, 165);
 		background-size: repeat;
