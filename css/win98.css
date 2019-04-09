@@ -53,9 +53,7 @@
 	{
 		background-image: url("../images/taskbar-stretch.png"); 
 	}
-	#itemsborder
-	{
-		cursor:move;  
+	#itemsborder 
 	}
 	#folder
 	{
@@ -66,7 +64,6 @@
 	}
 	#folderborder
 	{
-		cursor:move;  
 	}
 	#wallpaper
 	{
