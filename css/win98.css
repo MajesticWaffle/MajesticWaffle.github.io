@@ -54,7 +54,7 @@
 		background-image: url("../images/taskbar-stretch.png"); 
 	}
 	#itemsborder 
-        {
+    {
 	}
 	#folder
 	{
@@ -75,7 +75,6 @@
 	}
 	#wallpaperborder
 	{
-		cursor:move;  
 	}
 	.clickable
 	{
@@ -83,7 +82,6 @@
 	}
 	.move
 	{
-		cursor:move; 
 	}
 	body{
 		background-color: RGB(58, 110, 165);
