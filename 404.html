@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/win98.css">
 <title>404</title>
 	<style>
 		h1{
@@ -39,7 +40,17 @@
 <div id="error" class="container"style="position:absolute; top:15vh;left:20vw; ">
 <div id="errorheader">|</div>
 </div>
-	<script>
+
+<div id="taskbar" style="width: 100%;position: absolute; left: 0;bottom: 0;">
+<img class="clickable" src="images/taskbar-left.png" align=left>
+<img src="images/taskbar-detail.png" align=left>
+<img src="images/taskbar-right.png" align=right>
+<p id="clock" style="position:absolute; top:-3; right:8 ; text-align: center">4:20 AM</p>
+</div>
+<script src="javascript/clock.js"></script>
+<script src="javascript/mobiledetect.js"></script>
+<script>startTime();</script>
+<script>
 //Make the DIV element draggagle:
 dragElement(document.getElementById("error"));
 
