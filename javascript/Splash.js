@@ -19,7 +19,7 @@
 		'800x600 is god\'s resolution',
 		'Flaschools does not approve',
 		'System32 is optional',
-		'DOS based kernal',
+		'DOS based kernel',
 		'Epic Game Store Exclusive'
 		];
 		var randomNumber = Math.floor(Math.random()*textArray.length);
