@@ -36,6 +36,7 @@
 		resize: both;
 		min-width: 800;
 		min-height: 600;
+		
 	}
 	.noclick
 	{
@@ -84,7 +85,7 @@
 	}
 	.clickable
 	{
-		cursor:pointer; 
+		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAWCAYAAAAmaHdCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAjklEQVQ4T92MUQ7AIAhDvf+lnbUluiAT/dxLyJC9tgRUzTXVwM7TOar4a8lVmSpYYmCfZotivsTArgmR+l1i3zYde9ihCyC7t3EHvWIWmXcoUzJjJUCnc5BlBdH5DOQYJzqfgRzjA/3KgwyjA/3KAZ8xj5Q9cBnxSNkDl5E10mLgUI2RGgOHaoxJu2mU8gAnksZWpSW4vgAAAABJRU5ErkJggg=="), pointer; 
 	}
 	.move
 	{
@@ -93,6 +94,7 @@
 		background-color: RGB(58, 110, 165);
 		background-size: repeat;
 		overflow: hidden;
+		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAb0lEQVQ4T5WLCQ7AIAzD+P+nO9zRrrByWQqC4JSKVDi2Ufl0oDKcDFyG3aCTYTX4yTAbpDJkg6kM42ApQxxsZbDBVKZP8snJncPjsn3aG6yz6Gcs212J/fscilbSKfHfhZgrmWSDToi5kgmSiSJSHn58TNA+RjVaAAAAAElFTkSuQmCC"), auto;
 	}
 	@font-face{
 		font-family: "DOS";
