@@ -13,7 +13,7 @@
 		'Now on github.',
 		'Half-life > Half-life 2',
 		'it would appear that you exist, congrats',
-		'Version 7.1',
+		'Version 7',
 		'Windows 98',
 		'CTRL-ALT-DELETE',
 		'800x600 is god\'s resolution',

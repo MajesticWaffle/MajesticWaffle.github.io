@@ -7,7 +7,6 @@
 		color: white;
 		font-weight: bold;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
 	}
 	a{
 		font-size: 3vmin;
@@ -32,45 +31,14 @@
 	}
 	#items
 	{
-		background: silver;
-		resize: both;
-		min-width: 800;
-		min-height: 600;
-	}
-	.noclick
-	{
-		pointer-events: none;
-	}
-	@font-face{
-		font-family: "DOS";
-		src: url('../fonts/MorePerfectDOSVGA.ttf') format('truetype');
-	}
-	#clock
-	{
-		font-size: 12px;
-		font-weight: normal;
-		font-family: DOS;
-		text-shadow: none;
-		color: black;file:///D:/NewFolders/Docs/GitHub/MajesticWaffle.github.io/images/taskbar-right.png
-	}
-	#taskbar
-	{
-		background-image: url("../images/taskbar-stretch.png"); 
-	}
-	#itemsheader
-    {
-		background-image: url("../images/mainstretch-up.png"); 
-		height:21px;
-	}
-	#folder
-	{
-		background-image: url("../images/win98folder.png");
+		background-image: url("../images/macoswin.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
 	}
-	#folderborder
+	#itemsborder
 	{
+		cursor:move;  
 	}
 	#wallpaper
 	{
@@ -81,20 +49,11 @@
 	}
 	#wallpaperborder
 	{
-	}
-	.clickable
-	{
-		cursor:pointer; 
-	}
-	.move
-	{
+		cursor:move;  
 	}
 	body{
-		background-color: RGB(58, 110, 165);
-		background-size: repeat;
-		overflow: hidden;
-	}
-	@font-face{
-		font-family: "DOS";
-		src: url('fonts/MorePerfectDOSVGA.ttf') format('truetype');
+	background-image: url("../images/background.jpg");
+	background-color: RGB(58, 110, 165);
+  	background-size: repeat;
+	overflow: hidden;
 	}
