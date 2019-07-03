@@ -28,16 +28,16 @@
 
 <div style="position: absolute; top:0; width:100%; height:100%; pointer-events: none;">
 <!---stretched--->
-<img class="noclick" src="images/mainstretch-up.png" height=21px width=100% style="position: absolute; top:0;">
-<img class="noclick" src="images/mainstretch-left.png" height=100% width=3px style="position: absolute; left:0">
-<img class="noclick" src="images/mainstretch-down.png" height=3px width=100% style="position: absolute; left: 0; bottom:0">
-<img class="noclick" src="images/mainstretch-right.png" height=100% width=3px style="position: absolute; right:0">
+<img class="noclick" id="MS-UP" width=100% style="position: absolute; top:0;">
+<img class="noclick" id="MS-LEFT" height=100% style="position: absolute; left:0">
+<img class="noclick" id="MS-DOWN" width=100% style="position: absolute; left: 0; bottom:0">
+<img class="noclick" id="MS-RIGHT" height=100% style="position: absolute; right:0">
 
 <!---corners--->
-<img class="noclick" src="images/maincorner-upleft.png" style="position: absolute; top: 0; left: 0">
-<img class="noclick" src="images/maincorner-upright.png" style="position: absolute; top: 0; right: 0">
-<img class="noclick" src="images/maincorner-downleft.png" style="position: absolute; bottom: 0; left: 0">
-<img class="noclick" src="images/maincorner-downright.png" style="position: absolute; bottom: 0; right: 0">
+<img class="noclick" id="MC-UPLEFT" style="position: absolute; top: 0; left: 0">
+<img class="noclick" id="MC-UPRIGHT" style="position: absolute; top: 0; right: 0">
+<img class="noclick" id="MC-DOWNLEFT" style="position: absolute; bottom: 0; left: 0">
+<img class="noclick" id="MC-DOWNRIGHT" style="position: absolute; bottom: 0; right: 0">
 </div>
 </div></center>
 
@@ -50,9 +50,9 @@
 
 </div></div>
 <div id="taskbar" style="width: 100%;position: absolute; left: 0;bottom: 0;">
-<img onclick="StartClick()" class="clickable" src="images/taskbar-left.png" align=left>
-<img src="images/taskbar-detail.png" align=left>
-<img src="images/taskbar-right.png" align=right>
+<img id="taskbarButton" onclick="StartClick()" class="clickable" align=left>
+<img id="taskbarDetail" align=left>
+<img id="taskbarRight" align=right>
 <p id="clock" style="position:absolute; top:-3; right:8 ; text-align: center">4:20 AM</p>
 </div>
 </center>

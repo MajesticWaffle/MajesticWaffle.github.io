@@ -13,7 +13,7 @@
 		font-size: 3vmin;
    	 	color: white;
     	text-decoration: none;
-    display: block;
+		display: block;
 
 	}
 	object{
@@ -52,16 +52,11 @@
 		font-weight: normal;
 		font-family: DOS;
 		text-shadow: none;
-		color: black;file:///D:/NewFolders/Docs/GitHub/MajesticWaffle.github.io/images/taskbar-right.png
-	}
-	#taskbar
-	{
-		background-image: url("../images/taskbar-stretch.png"); 
+		color: white;
 	}
 	#itemsheader
     {
 		background-image: url("../images/mainstretch-up.png"); 
-		height:21px;
 	}
 	#folder
 	{
@@ -100,3 +95,21 @@
 		font-family: "DOS";
 		src: url('fonts/MorePerfectDOSVGA.ttf') format('truetype');
 	}
+	
+	/*Themeing Settings*/
+	#itemsheader{height:21px;} /* Should match MS-UP Height */
+	#MS-UP{content:url("../images/mainstretch-up.png"); height:21px;}
+	#MS-LEFT{content:url("../images/mainstretch-left.png"); width:3px;}
+	#MS-RIGHT{content:url("../images/mainstretch-right.png"); width:3px;}
+	#MS-DOWN{content:url("../images/mainstretch-down.png"); height:3px;}
+	
+	#MC-UPLEFT{content:url("../images/maincorner-upleft.png");}
+	#MC-UPRIGHT{content:url("../images/maincorner-upright.png");}
+	#MC-DOWNLEFT{content:url("../images/maincorner-downleft.png");}
+	#MC-DOWNRIGHT{content:url("../images/maincorner-downright.png");}
+	
+	#taskbar{background-image: url("../images/taskbar-stretch.png");}
+	#taskbarButton{content:url("../images/taskbar-left.png");}
+	#taskbarDetail{content:url("../images/taskbar-detail.png");}
+	#taskbarRight{content:url("../images/taskbar-right.png");}	
+	
