@@ -1,8 +1,8 @@
-//Quit snooping in mah javascript
-var counter = 0;
-function StartClick(){
-console.log("test" + counter);
-if(counter == 5){
-window.location = "secret.html";
-}else{counter++;}
+var themetoggle = false;
+function test(){
+	if(themetoggle)
+		$('head').append('<link rel="stylesheet" type="text/css" href="css/win98.css">');
+	else
+		$('head').append('<link rel="stylesheet" type="text/css" href="css/winxp.css">');
+	themetoggle = !themetoggle;
 }

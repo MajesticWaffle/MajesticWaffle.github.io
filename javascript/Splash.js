@@ -13,14 +13,14 @@
 		'Now on github.',
 		'Half-life > Half-life 2',
 		'it would appear that you exist, congrats',
-		'Version 7.1',
-		'Windows 98',
+		'Version 7.3',
+		'Windows 98... or XP?',
 		'CTRL-ALT-DELETE',
 		'800x600 is god\'s resolution',
-		'Flaschools does not approve',
 		'System32 is optional',
 		'DOS based kernel',
-		'Epic Game Store Exclusive'
+		'Epic Game Store Exclusive',
+		'Press Start',
 		];
 		var randomNumber = Math.floor(Math.random()*textArray.length);
 		document.getElementById("splash").textContent = textArray[randomNumber];

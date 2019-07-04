@@ -29,11 +29,13 @@
      	cursor:pointer;  
 	}
 	#items{
-		background: silver;
 		resize: both;
 		min-width: 800;
 		min-height: 600;
-		
+		background: url("../xp-images/background1px.png");
+		background-size: calc(100% - 5px) calc(100% - 5px);
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	.noclick{
 		pointer-events: none;
@@ -66,8 +68,12 @@
 		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAWCAYAAAAmaHdCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAjklEQVQ4T92MUQ7AIAhDvf+lnbUluiAT/dxLyJC9tgRUzTXVwM7TOar4a8lVmSpYYmCfZotivsTArgmR+l1i3zYde9ihCyC7t3EHvWIWmXcoUzJjJUCnc5BlBdH5DOQYJzqfgRzjA/3KgwyjA/3KAZ8xj5Q9cBnxSNkDl5E10mLgUI2RGgOHaoxJu2mU8gAnksZWpSW4vgAAAABJRU5ErkJggg=="), pointer; 
 	}
 	body{
+		background-image: url("../xp-images/background.jpg");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		background-color: RGB(58, 110, 165);
-		background-size: repeat;
 		overflow: hidden;
 		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAb0lEQVQ4T5WLCQ7AIAzD+P+nO9zRrrByWQqC4JSKVDi2Ufl0oDKcDFyG3aCTYTX4yTAbpDJkg6kM42ApQxxsZbDBVKZP8snJncPjsn3aG6yz6Gcs212J/fscilbSKfHfhZgrmWSDToi5kgmSiSJSHn58TNA+RjVaAAAAAElFTkSuQmCC"), auto;
 	}
@@ -77,7 +83,10 @@
 	}
 	
 	/*Themeing Settings*/
-	#itemsheader{height:30px;} /* Should match MS-UP Height */
+	#diritem{top:15px;}
+	#folder{width: 219px; height: 107px;}
+	
+	#itemsheader{height:30px; width: calc(100% - 10px)} /* Should match MS-UP Height */
 	#MS-UP{content:url("../xp-images/mainstretch-up.png"); height:30px;}
 	#MS-LEFT{content:url("../xp-images/mainstretch-left.png"); width:5px;}
 	#MS-RIGHT{content:url("../xp-images/mainstretch-right.png"); width:5px;}
@@ -93,3 +102,19 @@
 	#taskbarDetail{content:url("../xp-images/taskbar-detail.png");}
 	#taskbarRight{content:url("../xp-images/taskbar-right.png");}	
 	
+	.errorcontainer {
+		width: 362px; /*Use this to control width of the parent container, hence the image*/
+		height: 126px;
+		background-image: url("../xp-images/new404.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
+	.IEcontainer {
+		width: 273px; /*Use this to control width of the parent container, hence the image*/
+		height: 126px;
+		background-image: url("../xp-images/newIE.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}

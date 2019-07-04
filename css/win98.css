@@ -86,6 +86,7 @@
 	{
 	}
 	body{
+		background-image: none;
 		background-color: RGB(58, 110, 165);
 		background-size: repeat;
 		overflow: hidden;
@@ -97,7 +98,11 @@
 	}
 	
 	/*Themeing Settings*/
+	#diritem{top:8px;}
+	#folder{width: 219px; height: 100px;}
+	
 	#itemsheader{height:21px;} /* Should match MS-UP Height */
+	
 	#MS-UP{content:url("../images/mainstretch-up.png"); height:21px;}
 	#MS-LEFT{content:url("../images/mainstretch-left.png"); width:3px;}
 	#MS-RIGHT{content:url("../images/mainstretch-right.png"); width:3px;}
@@ -113,3 +118,19 @@
 	#taskbarDetail{content:url("../images/taskbar-detail.png");}
 	#taskbarRight{content:url("../images/taskbar-right.png");}	
 	
+	.errorcontainer {
+		width: 358px; /*Use this to control width of the parent container, hence the image*/
+		height: 130px;
+		background-image: url("../images/new404.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
+	.IEcontainer {
+		width: 324px; /*Use this to control width of the parent container, hence the image*/
+		height: 130px;
+		background-image: url("../images/newIE.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
