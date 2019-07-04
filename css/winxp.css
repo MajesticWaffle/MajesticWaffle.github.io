@@ -7,7 +7,6 @@
 		color: white;
 		font-weight: bold;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
 	}
 	a{
 		font-size: 3vmin;
@@ -24,66 +23,47 @@
 	::-webkit-scrollbar { 
 		display: none; 
 	}
-	a:hover 
-	{
+	a:hover {
     	color: white; 
      	text-decoration:none; 
      	cursor:pointer;  
 	}
-	#items
-	{
+	#items{
 		background: silver;
 		resize: both;
 		min-width: 800;
 		min-height: 600;
 		
 	}
-	.noclick
-	{
+	.noclick{
 		pointer-events: none;
 	}
 	@font-face{
 		font-family: "DOS";
 		src: url('../fonts/MorePerfectDOSVGA.ttf') format('truetype');
 	}
-	#clock
-	{
+	#clock{
 		font-size: 12px;
 		font-weight: normal;
 		font-family: DOS;
 		text-shadow: none;
 		color: white;
 	}
-	#itemsheader
-    {
-		background-image: url("../xp-images/mainstretch-up.png"); 
-	}
-	#folder
-	{
+	#itemsheader{background-image: url("../xp-images/mainstretch-up.png"); }
+	#folder{
 		background-image: url("../xp-images/win98folder.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
 	}
-	#folderborder
-	{
-	}
-	#wallpaper
-	{
+	#wallpaper{
 		background-image: url("../backgroundselect.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
 	}
-	#wallpaperborder
-	{
-	}
-	.clickable
-	{
+	.clickable{
 		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAWCAYAAAAmaHdCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAjklEQVQ4T92MUQ7AIAhDvf+lnbUluiAT/dxLyJC9tgRUzTXVwM7TOar4a8lVmSpYYmCfZotivsTArgmR+l1i3zYde9ihCyC7t3EHvWIWmXcoUzJjJUCnc5BlBdH5DOQYJzqfgRzjA/3KgwyjA/3KAZ8xj5Q9cBnxSNkDl5E10mLgUI2RGgOHaoxJu2mU8gAnksZWpSW4vgAAAABJRU5ErkJggg=="), pointer; 
-	}
-	.move
-	{
 	}
 	body{
 		background-color: RGB(58, 110, 165);
