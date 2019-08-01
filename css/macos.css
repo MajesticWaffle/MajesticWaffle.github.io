@@ -106,7 +106,7 @@
 	#clock{color: black; position:absolute; top:-7px ; right:100 ; text-align: center}
 	
 	.errorcontainer {
-		width: 362px; /*Use this to control width of the parent container, hence the image*/
+		width: 273px; /*Use this to control width of the parent container, hence the image*/
 		height: 126px;
 		background-image: url("/macos-images/new404.png");
 		background-size:     cover;                      /* <------ */
