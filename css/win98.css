@@ -44,7 +44,7 @@
 	}
 	@font-face{
 		font-family: "DOS";
-		src: url('../fonts/MorePerfectDOSVGA.ttf') format('truetype');
+		src: url('/fonts/MorePerfectDOSVGA.ttf') format('truetype');
 	}
 	#clock
 	{
@@ -55,11 +55,11 @@
 	}
 	#itemsheader
     {
-		background-image: url("../images/mainstretch-up.png"); 
+		background-image: url("/images/mainstretch-up.png"); 
 	}
 	#folder
 	{
-		background-image: url("../images/win98folder.png");
+		background-image: url("/images/win98folder.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
@@ -69,7 +69,7 @@
 	}
 	#wallpaper
 	{
-		background-image: url("../backgroundselect.png");
+		background-image: url("/backgroundselect.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
@@ -102,20 +102,20 @@
 	
 	#itemsheader{height:21px;} /* Should match MS-UP Height */
 	
-	#MS-UP{content:url("../images/mainstretch-up.png"); height:21px;}
-	#MS-LEFT{content:url("../images/mainstretch-left.png"); width:3px;}
-	#MS-RIGHT{content:url("../images/mainstretch-right.png"); width:3px;}
-	#MS-DOWN{content:url("../images/mainstretch-down.png"); height:3px;}
+	#MS-UP{content:url("/images/mainstretch-up.png"); height:21px;}
+	#MS-LEFT{content:url("/images/mainstretch-left.png"); width:3px;}
+	#MS-RIGHT{content:url("/images/mainstretch-right.png"); width:3px;}
+	#MS-DOWN{content:url("/images/mainstretch-down.png"); height:3px;}
 	
-	#MC-UPLEFT{content:url("../images/maincorner-upleft.png");}
-	#MC-UPRIGHT{content:url("../images/maincorner-upright.png");}
-	#MC-DOWNLEFT{content:url("../images/maincorner-downleft.png");}
-	#MC-DOWNRIGHT{content:url("../images/maincorner-downright.png");}
+	#MC-UPLEFT{content:url("/images/maincorner-upleft.png");}
+	#MC-UPRIGHT{content:url("/images/maincorner-upright.png");}
+	#MC-DOWNLEFT{content:url("/images/maincorner-downleft.png");}
+	#MC-DOWNRIGHT{content:url("/images/maincorner-downright.png");}
 	
-	#taskbar{background-image: url("../images/taskbar-stretch.png");}
-	#taskbarButton{content:url("../images/taskbar-left.png");}
-	#taskbarDetail{content:url("../images/taskbar-detail.png");}
-	#taskbarRight{content:url("../images/taskbar-right.png");}	
+	#taskbar{background-image: url("/images/taskbar-stretch.png");}
+	#taskbarButton{content:url("/images/taskbar-left.png");}
+	#taskbarDetail{content:url("/images/taskbar-detail.png");}
+	#taskbarRight{content:url("/images/taskbar-right.png");}	
 	
 	#taskbar{width: 100%;position: absolute; left: 0; bottom: 0;}
 	#clock{color: black; position:absolute; top:-3; right:8 ; text-align: center}
@@ -123,7 +123,7 @@
 	.errorcontainer {
 		width: 358px; /*Use this to control width of the parent container, hence the image*/
 		height: 130px;
-		background-image: url("../images/new404.png");
+		background-image: url("/images/new404.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
@@ -131,7 +131,7 @@
 	.IEcontainer {
 		width: 324px; /*Use this to control width of the parent container, hence the image*/
 		height: 130px;
-		background-image: url("../images/newIE.png");
+		background-image: url("/images/newIE.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
