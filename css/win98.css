@@ -52,7 +52,6 @@
 		font-weight: normal;
 		font-family: DOS;
 		text-shadow: none;
-		color: black;
 	}
 	#itemsheader
     {
@@ -117,6 +116,9 @@
 	#taskbarButton{content:url("../images/taskbar-left.png");}
 	#taskbarDetail{content:url("../images/taskbar-detail.png");}
 	#taskbarRight{content:url("../images/taskbar-right.png");}	
+	
+	#taskbar{width: 100%;position: absolute; left: 0; bottom: 0;}
+	#clock{color: black; position:absolute; top:-3; right:8 ; text-align: center}
 	
 	.errorcontainer {
 		width: 358px; /*Use this to control width of the parent container, hence the image*/

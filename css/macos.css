@@ -12,7 +12,7 @@
 		font-size: 3vmin;
    	 	color: white;
     	text-decoration: none;
-    display: block;
+		display: block;
 
 	}
 	object{
@@ -23,37 +23,100 @@
 	::-webkit-scrollbar { 
 		display: none; 
 	}
-	a:hover 
-	{
+	a:hover {
     	color: white; 
      	text-decoration:none; 
      	cursor:pointer;  
 	}
-	#items
-	{
-		background-image: url("../images/macoswin.png");
+	#items{
+		resize: both;
+		min-width: 800;
+		min-height: 600;
+		background: url("../macos-images/background1px.png");
+		background-size: calc(100% - 5px) calc(100% - 5px);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.noclick{
+		pointer-events: none;
+	}
+	@font-face{
+		font-family: "DOS";
+		src: url('../fonts/MorePerfectDOSVGA.ttf') format('truetype');
+	}
+	#clock{
+		font-size: 12px;
+		font-weight: normal;
+		font-family: DOS;
+		text-shadow: none;
+	}
+	#itemsheader{background-image: url("../macos-images/mainstretch-up.png"); }
+	#folder{
+		background-image: url("../macos-images/win98folder.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
 	}
-	#itemsborder
-	{
-		cursor:move;  
-	}
-	#wallpaper
-	{
+	#wallpaper{
 		background-image: url("../backgroundselect.png");
 		background-size:     cover;                      /* <------ */
 		background-repeat:   no-repeat;
 		background-position: top left;   
 	}
-	#wallpaperborder
-	{
-		cursor:move;  
+	.clickable{
+		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAWCAYAAAAmaHdCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAjklEQVQ4T92MUQ7AIAhDvf+lnbUluiAT/dxLyJC9tgRUzTXVwM7TOar4a8lVmSpYYmCfZotivsTArgmR+l1i3zYde9ihCyC7t3EHvWIWmXcoUzJjJUCnc5BlBdH5DOQYJzqfgRzjA/3KgwyjA/3KAZ8xj5Q9cBnxSNkDl5E10mLgUI2RGgOHaoxJu2mU8gAnksZWpSW4vgAAAABJRU5ErkJggg=="), pointer; 
 	}
 	body{
-	background-image: url("../images/background.jpg");
-	background-color: RGB(58, 110, 165);
-  	background-size: repeat;
-	overflow: hidden;
+		background-image: url("../macos-images/background.png");
+		-webkit-background-size: tile;
+		-moz-background-size: tile;
+		-o-background-size: tile;
+		background-size: tile;
+		background-color: RGB(58, 110, 165);
+		overflow: hidden;
+		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAb0lEQVQ4T5WLCQ7AIAzD+P+nO9zRrrByWQqC4JSKVDi2Ufl0oDKcDFyG3aCTYTX4yTAbpDJkg6kM42ApQxxsZbDBVKZP8snJncPjsn3aG6yz6Gcs212J/fscilbSKfHfhZgrmWSDToi5kgmSiSJSHn58TNA+RjVaAAAAAElFTkSuQmCC"), auto;
+	}
+	@font-face{
+		font-family: "DOS";
+		src: url('fonts/MorePerfectDOSVGA.ttf') format('truetype');
+	}
+	
+	/*Themeing Settings*/
+	#diritem{top:10px;}
+	#folder{width: 219px; height: 107px;}
+	
+	#itemsheader{height:22px; width: calc(100% - 10px)} /* Should match MS-UP Height */
+	#MS-UP{content:url("../macos-images/mainstretch-up.png"); height:22px;}
+	#MS-LEFT{content:url("../macos-images/mainstretch-left.png"); width:6px;}
+	#MS-RIGHT{content:url("../macos-images/mainstretch-right.png"); width:7px;}
+	#MS-DOWN{content:url("../macos-images/mainstretch-down.png"); height:7px;}
+	
+	#MC-UPLEFT{content:url("../macos-images/maincorner-upleft.png");}
+	#MC-UPRIGHT{content:url("../macos-images/maincorner-upright.png");}
+	#MC-DOWNLEFT{content:url("../macos-images/maincorner-downleft.png");}
+	#MC-DOWNRIGHT{content:url("../macos-images/maincorner-downright.png");}
+	
+	#taskbar{background-image: url("../macos-images/taskbar-stretch.png");}
+	#taskbarButton{content:url("../macos-images/taskbar-left.png");}
+	#taskbarDetail{content:url("../macos-images/taskbar-detail.png");}
+	#taskbarRight{content:url("../macos-images/taskbar-right.png");}	
+	
+	#taskbar{height: 20px; width: 100%;position: absolute; left: 0;top: 0;}
+	#clock{color: black; position:absolute; top:-7px ; right:100 ; text-align: center}
+	
+	.errorcontainer {
+		width: 362px; /*Use this to control width of the parent container, hence the image*/
+		height: 126px;
+		background-image: url("../macos-images/new404.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
+	.IEcontainer {
+		width: 273px; /*Use this to control width of the parent container, hence the image*/
+		height: 126px;
+		background-image: url("../macos-images/newIE.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
 	}
