@@ -68,10 +68,10 @@
 	}
 	body{
 		background-image: url("../macos-images/background.png");
-		-webkit-background-size: tile;
-		-moz-background-size: tile;
-		-o-background-size: tile;
-		background-size: tile;
+		-webkit-background-size: initial;
+		-moz-background-size: initial;
+		-o-background-size: initial;
+		background-size: initial;
 		background-color: RGB(58, 110, 165);
 		background-repeat: repeat;
 		overflow: hidden;
