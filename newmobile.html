@@ -11,27 +11,33 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>The Goodest Website Mobile</title>
 </head>
+<style>
+p{
+	color: black;
+	font-weight: normal;
+	text-shadow: none;
+}
+</style>
 <!---Website Content--->
 
-<div id ="items" style="position:absolute; top:0px; left:0px; width:100%; height:100%">
-<div style="padding: 30px; position:absolute; width:90%"><iframe seamless="seamless" src ="https://drive.google.com/embeddedfolderview?id=1FasOrtHcVjI3jcch3iheRUDMexBb6W5I#grid" style="overflow:hidden; width:100%; height: 100%;" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe></div>
-<img class="noclick" src="images/mainstretch-up.png" height=42px width=100% style="position: absolute; top:0;">
-<img class="noclick" src="images/mainstretch-left.png" height=100% width=6px style="position: absolute; left:0">
-<img class="noclick" src="images/mainstretch-down.png" height=6px width=100% style="position: absolute; left: 0; bottom:0">
-<img class="noclick" src="images/mainstretch-right.png" height=100% width=6px style="position: absolute; right:0">
+<div style="min-width: calc(100% - 15px); min-height:calc(100% - 5px); margin: 5px; background: lightgray;">
+<!---stretched--->
+<img class="noclick" id="MS-UP" style="position: absolute; width: calc(100% - 40px); top:5px;">
+<img class="noclick" id="MS-LEFT" style="position: absolute; height: calc(100% - 20px); left:10px; bottom:10px">
+<img class="noclick" id="MS-DOWN" style="position: absolute; width: calc(100% - 20px); left: 10px; bottom:10px">
+<img class="noclick" id="MS-RIGHT" style="position: absolute; height: calc(100% - 20px); right:10px; bottom:10px">
 
 <!---corners--->
-<img class="noclick" src="images/maincorner-upleft-mobile.png" height=42px style="position: absolute; top: 0; left: 0">
-<img class="noclick" src="images/maincorner-upright.png" height=42px style="position: absolute; top: 0; right: 0">
-<img class="noclick" src="images/maincorner-downleft.png" style="position: absolute; bottom: 0; left: 0">
-<img class="noclick" src="images/maincorner-downright.png" style="position: absolute; bottom: 0; right: 0">
-
+<img class="noclick" id="MC-UPLEFT" style="position: absolute; top: 5px; left: 10px">
+<img class="noclick" id="MC-UPRIGHT" style="position: absolute; top: 5px; right: 10px">
+<img class="noclick" id="MC-DOWNLEFT" style="position: absolute; bottom: 10px; left: 10px">
+<img class="noclick" id="MC-DOWNRIGHT" style="position: absolute; bottom: 10px; right: 10px">
+<div id="navigation" style="position:absolute; top:26px; background:gray; min-height: 20px; min-width:calc(100% - 28px)">
+<p class="clickable" onclick="games()" style="position:absolute; top:-15;left:10px;">Games</p>
+<p class="clickable" onclick="oses()" style="position:absolute; top:-15;left:50%; text-align: center">OS's</p>
+<p class="clickable" onclick="tools()" style="position:absolute; top:-15;text-align:right; right:10px">Tools</p>
 </div>
-<div>
-
+<iframe id="yeets" name="yeets" src ="newthing.html" style="position:absolute; top:46px; height: calc(100% - 65px); width: calc(100% - 30px)"></iframe>
 </div>
-<body>
-<div> 
-</div>
-</body>
+<script src="javascript/dirrectory.js"></script>
 </html>
