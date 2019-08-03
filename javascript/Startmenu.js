@@ -10,6 +10,7 @@ function loadCookieTheme(){
 	$('head').append(themeArray[themeIndex]);
 }
 function changeTheme(){
+	console.log("Why");
 	$('head').append(themeArray[themeIndex]);
 	themeIndex++;
 	if(themeIndex > themeMax)
