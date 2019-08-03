@@ -6,7 +6,7 @@ var themeArray = [
 '<link rel="stylesheet" type="text/css" href="/css/macos.css">'
 ]
 function loadCookieTheme(){
-	themeIndex = parseInt(document.cookie);
+	console.log(document.cookie);
 	$('head').append(themeArray[themeIndex]);
 }
 function changeTheme(){
