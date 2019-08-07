@@ -1,5 +1,6 @@
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title>JS Error</title>
 <style>
 		body{background-color: navy;}
@@ -19,6 +20,9 @@
 			font-family: DOS;
 			text-decoration: none;
 		}
+		a{
+			color: gray;
+		}
 		div {
 			margin: 0;
 			position: absolute;
@@ -34,18 +38,32 @@
 <body>
 <div>
 <center><h1><span> Thicc Industries </span></h1></center>
-<p>
-A fatal exception 0E has occured at 0028:C562F1B7 in VXD ctpci9x(05)<br>
-+ 00001853. The current application will be terminated.<br>
+<p id="error">
+A fatal Javascript [name] exception has occured: <br>
++ [message]. <br>
++ 00001853. The current website will be terminated.<br>
 <br>
 * Press any key to terminate the current application.<br>
 * Press CTRL+ALT+DEL again to restart your computer. You will lose any unsaved information in all applications.<br>
 </p>
 
-<p style="text-align: center;"> Press any key to continue _ </p>
+<center><a href="/index.html"> Press here to reload _ </a></center>
 
-</div>
 
 </p>
+</div>
+<script>
+try{
+	
+}
+catch(err){
+	var error = document.getElementById('error').innerHTML;
+	error = error.replace("[name]" , err.name);
+	error = error.replace("[message]" , err.message);
+	document.getElementById('error').innerHTML = error;
+}
+</script>
+
+
 </body>
 </html>
