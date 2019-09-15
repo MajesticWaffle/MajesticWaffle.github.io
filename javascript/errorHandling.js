@@ -5,6 +5,7 @@ window.onerror = function(msg, url, line, col, error) {
 	document.getElementById("errorHolder").style.pointerEvents = "auto";
 	document.getElementById("errorHolder").style.opacity = "1.0";
     //alert(msg + " , " + url + " , " + line + " , " + col + " , " + error);
+	url = url.replace("https://www.thiccindustries.com/" , "");
 	var bsodText = document.getElementById('bsodText').innerHTML;
 	bsodText = bsodText.replace("[error]" , error);
 	bsodText = bsodText.replace("[url]" , url);
