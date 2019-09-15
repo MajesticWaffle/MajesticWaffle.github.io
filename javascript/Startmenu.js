@@ -5,7 +5,7 @@ var themeArray = [
 '<link rel="stylesheet" type="text/css" href="/css/winxp.css">',
 '<link rel="stylesheet" type="text/css" href="/css/macos.css">'
 ]
-var bsosAppend = '<link rel="stylesheet" type="text/css" href="/css/bsod.css">'
+var bsodAppend = '<link rel="stylesheet" type="text/css" href="/css/bsod.css">'
 function changeTheme(){
 	console.log("setting theme: " + themeIndex);
 	$('head').append(themeArray[themeIndex]);
