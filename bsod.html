@@ -3,66 +3,61 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title>JS Error</title>
 <style>
-		body{background-color: navy;}
-		h1{color: navy;}
-		p{color: silver;}
-		h1 span{
-		background-color: silver;
-		text-align: center;
+		#errorContent > h1{color: navy;}
+		#errorContent > p{color: silver;}
+		#errorContent > h1 span{
+			background-color: silver;
+			text-align: center;
 		}
 		@font-face{
 			font-family: "DOS";
 			src: url('fonts/MorePerfectDOSVGA.ttf') format('truetype');
 		}
-		h1, p, a{
+		#errorContent > h1, p, a{
 			font-size: 18px;
 			font-weight: normal;
 			font-family: DOS;
 			text-decoration: none;
+			text-shadow: none;
 		}
-		a{
-			color: gray;
+		#errorHolder {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 		}
-		div {
+		#errorContent {
 			margin: 0;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
-		}		
-		
+		}
 </style>
 </head>
 
 <body>
-<div>
-<center><h1><span> Thicc Industries </span></h1></center>
-<p id="error">
-A fatal Javascript [name] exception has occured: <br>
-+ [message]. <br>
-+ 00001853. The current website will be terminated.<br>
+<div id="errorHolder" style="background-color: navy;">
+<div id="errorContent" style="background-color: navy;">
+<h1 align="center"><span> Thicc Industries </span></h1>
+<p id="bsodText">
+A fatal Javascript exception has occured: <br>
++ [error].<br>
++ caused by: [url].<br>
++ On line: [line], column: [column].<br>
 <br>
-* Press any key to terminate the current application.<br>
-* Press CTRL+ALT+DEL again to restart your computer. You will lose any unsaved information in all applications.<br>
+You should probably tell me about this.<br>
+<br>
 </p>
 
-<center><a href="/index.html"> Press here to reload _ </a></center>
-
-
-</p>
+<p align="center" onclick="clearError()" style="color: gray;"> Press here to close this screen _ </p>
 </div>
-<script>
-try{
-	
-}
-catch(err){
-	var error = document.getElementById('error').innerHTML;
-	error = error.replace("[name]" , err.name);
-	error = error.replace("[message]" , err.message);
-	document.getElementById('error').innerHTML = error;
-}
-</script>
+</div>
+<p onclick="test">test</p>
+<script src="javascript/errorHandling.js"></script>
 
 
 </body>
