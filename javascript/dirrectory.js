@@ -1,13 +1,13 @@
 function games(){
-	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1mb8XTzqCPMTbrhPRnfLS-kARaqMclhJB#list";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#list";
 	document.getElementById('click').play();
 }
 function oses(){
-	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1M9c3jLdIVnjxzYCbbSgm0Wz9tZ2FS-9E#list";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1TbsYdx00e-d27UkHbuo8xkcbe828qoSi#list";
 	document.getElementById('click').play();	
 }
 function tools(){
-	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1ONpd5o1Q1iSoq4rkDjE63PH82C2dk6u1#list";	
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1wnD5bA4X6tovffcdfwQGT5S5jZjC7i_w#list";	
 	document.getElementById('click').play();
 }
 function midi(){
@@ -29,14 +29,14 @@ function midi(){
 
 
 function mgames(){
-	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1mb8XTzqCPMTbrhPRnfLS-kARaqMclhJB#grid";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#grid";
 	document.getElementById('click').play();
 }
 function moses(){
-	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1M9c3jLdIVnjxzYCbbSgm0Wz9tZ2FS-9E#grid";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1TbsYdx00e-d27UkHbuo8xkcbe828qoSi#grid";
 	document.getElementById('click').play();	
 }
 function mtools(){
-	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1ONpd5o1Q1iSoq4rkDjE63PH82C2dk6u1#grid";	
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1wnD5bA4X6tovffcdfwQGT5S5jZjC7i_w#grid";	
 	document.getElementById('click').play();
 }
