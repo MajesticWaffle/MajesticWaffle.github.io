@@ -1,12 +1,7 @@
-var clickCount = 0;
+var easterAppend = '<link rel="stylesheet" type="text/css" href="/css/easteregg.css">'
+var bsodAppend = '<link rel="stylesheet" type="text/css" href="/css/bsod.css">'
 function requestError(){
-	clickCount++;
-	if(clickCount == 10){
-		clickCount = 0;
-		throw "User Requested Crash";
-	}
-	else{
-	document.getElementById("splash").textContent = "Click " + (10-clickCount) + " more times to force a BSOD";
-	}
+	$('head').append(easterAppend);
+	$('head').append(bsodAppend);
 }
 	

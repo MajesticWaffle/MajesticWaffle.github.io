@@ -1,0 +1,22 @@
+body{
+	background-color: 111111;
+}
+/*Themeing Settings*/
+#MS-UP{content:url("../xmas-images/mainstretch-up.png"); height:21px;}
+#MS-LEFT{content:url("../xmas-images/mainstretch-left.png"); width:3px;}
+#MS-RIGHT{content:url("../xmas-images/mainstretch-right.png"); width:3px;}
+#MS-DOWN{content:url("../xmas-images/mainstretch-down.png"); height:3px;}	
+
+#MC-UPLEFT{content:url("../xmas-images/maincorner-upleft.png");}
+#MC-UPRIGHT{content:url("../xmas-images/maincorner-upright.png");}
+#MC-DOWNLEFT{content:url("../xmas-images/maincorner-downleft.png");}
+#MC-DOWNRIGHT{content:url("../xmas-images/maincorner-downright.png");}
+
+#itemsheader
+{
+	background-image: url("../xmas-images/mainstretch-up.png"); 
+}
+#folder
+{
+	background-image: url("../xmas-images/win98folder.png");
+}
