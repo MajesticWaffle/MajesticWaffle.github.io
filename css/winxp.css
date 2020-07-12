@@ -104,6 +104,7 @@
 	
 	#taskbar{height: 100%; width: 100%; position: absolute; left: 0; bottom: 0; top: calc(100% - 30px)}
 	#clock{color: white; position:absolute; top:-2; right:15 ; text-align: center}
+	#splash{position:absolute; top:-12px; left:8px; font-family: "Segoe UI"; text-shadow: 1px 1px black; font-size: 16px;}
 	
 	.errorcontainer {
 		width: 362px; /*Use this to control width of the parent container, hence the image*/

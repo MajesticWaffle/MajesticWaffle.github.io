@@ -119,7 +119,7 @@
 	
 	#taskbar{height: 100%; width: 100%; position: absolute; left: 0; bottom: 0; top: calc(100% - 30px)}
 	#clock{color: black; position:absolute; top:-3; right:8 ; text-align: center}
-	
+	#splash{position:absolute; top:-12px; left:8px; font-weight: normal; font-size: 16px;}
 	.errorcontainer {
 		width: 358px; /*Use this to control width of the parent container, hence the image*/
 		height: 130px;

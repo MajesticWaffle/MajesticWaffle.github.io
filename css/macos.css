@@ -44,6 +44,10 @@
 		font-family: "DOS";
 		src: url('../fonts/MorePerfectDOSVGA.ttf') format('truetype');
 	}
+		@font-face{
+		font-family: "MAC";
+		src: url('../fonts/CHARCOAL.TTF') format('truetype');
+	}
 	#clock{
 		font-size: 12px;
 		font-weight: normal;
@@ -104,7 +108,8 @@
 	
 	#taskbar{height: 20px; width: 100%;position: absolute; left: 0;top: 0;}
 	#clock{color: black; position:absolute; top:-7px ; right:100 ; text-align: center}
-	
+	#splash{position:absolute; top: -12px; left: 50%; transform: translate(-50%, 0%); font-family: MAC; font-weight: normal; font-size: 14px; color:black}
+		
 	.errorcontainer {
 		width: 273px; /*Use this to control width of the parent container, hence the image*/
 		height: 126px;
