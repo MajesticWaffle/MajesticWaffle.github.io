@@ -7,7 +7,7 @@ function oses(){
 	document.getElementById('click').play();	
 }
 function tools(){
-	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1wnD5bA4X6tovffcdfwQGT5S5jZjC7i_w#list";	
+	window.frames["yeets"].location = "dev/index.html";	
 	document.getElementById('click').play();
 }
 function midi(){
