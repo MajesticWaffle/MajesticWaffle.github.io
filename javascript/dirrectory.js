@@ -1,3 +1,21 @@
+function dirLoad(){
+	var hash = location.hash;
+	console.log(hash);
+	switch (hash.toLowerCase()){
+		case "#games":
+			games();
+			break;
+		case "#oses":
+			oses();
+			break;
+		case "#dev":
+			tools();
+			break;			
+	}
+
+}
+
+
 function games(){
 	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#list";
 	document.getElementById('click').play();

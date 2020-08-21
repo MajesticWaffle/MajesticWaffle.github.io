@@ -49,7 +49,16 @@ p , a{
 <h1> Thicc Industries Development </h1>
 </div>
 </head>
-<body>
+
+<script>
+function check_frame() {
+     if( top === self ) { // not in a frame
+          location.href = "../index.html#dev"; // either the frameset or an error.
+     }
+}
+</script>
+
+<body onload="check_frame();">
 <br>
 <br>
 <p>If you have a stroke from my code its you're own fault.</p>
