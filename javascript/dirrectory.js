@@ -45,6 +45,11 @@ function midi(){
 	document.getElementById('click').play();
 }
 
+function home(){
+	window.frames["yeets"].location = "splash.html";	
+	document.getElementById('click').play();
+}
+
 
 function mgames(){
 	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#grid";
