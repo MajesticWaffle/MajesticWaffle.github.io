@@ -17,6 +17,4 @@ function GetIEVersion() {
 
 if (GetIEVersion() > 0) 
    window.location.replace("http://majesticwaffle.github.io/IEShame.html");
-else 
-   document.getElementById("splash").innerHTML = "THICC.EXE - Untitled Document";
 }
