@@ -94,7 +94,6 @@
 		overflow: hidden;
 		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAb0lEQVQ4T5WLCQ7AIAzD+P+nO9zRrrByWQqC4JSKVDi2Ufl0oDKcDFyG3aCTYTX4yTAbpDJkg6kM42ApQxxsZbDBVKZP8snJncPjsn3aG6yz6Gcs212J/fscilbSKfHfhZgrmWSDToi5kgmSiSJSHn58TNA+RjVaAAAAAElFTkSuQmCC"), auto;
 	}
-	
 	/*Themeing Settings*/
 	#diritem
 	{
@@ -131,7 +130,7 @@
 	
 	#taskbar{background-image: url("../images/taskbar-stretch.png");}
 	
-	#taskbarButton_inactive{content:url("../images/taskbar-left.png"); position: absolute; left: 0px; }
+	#taskbarButton_inactive{content:url("../images/taskbar-left.png"); position: absolute; left: 0px;}
 	#taskbarButton_active{content:url("../images/taskbar-left-pressed.png"); position: absolute; left: 0px;}
 	
 	#taskbarDetail{content:url("../images/taskbar-detail.png");}
