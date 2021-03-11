@@ -13,6 +13,9 @@ function BuildRepoList(){
 	$.getJSON('https://api.github.com/users/MajesticWaffle/repos',{},function(data){
 		
 		data.forEach(v => {
+			if(String(v.description).includes("!tignore"))
+				return;
+
 			if(v.name == removeSelf)
 				return;
 			
@@ -21,7 +24,10 @@ function BuildRepoList(){
 		})
 		
 		data.forEach(v => {
-			if(v.name == removeSelf)
+			if(String(v.description).includes("!tignore"))
+			return;
+
+			if(v.name == removeSelf || v.description.includes("!tignore"))
 				return;
 			
 			var newLabel = v.name.replace(/-/g, " ");
