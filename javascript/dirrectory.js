@@ -17,15 +17,15 @@ function dirLoad(){
 
 
 function games(){
-	//window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#list";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#list";
 	document.getElementById('click').play();
 }
 function oses(){
-	//window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1TbsYdx00e-d27UkHbuo8xkcbe828qoSi#list";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1TbsYdx00e-d27UkHbuo8xkcbe828qoSi#list";
 	document.getElementById('click').play();	
 }
 function tools(){
-	//window.frames["yeets"].location = "dev/index.html";	
+	window.frames["yeets"].location = "dev/index.html";	
 	document.getElementById('click').play();
 }
 function midi(){
@@ -52,14 +52,14 @@ function home(){
 
 
 function mgames(){
-	//window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#grid";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1MEShixtBNKNLAPjG0oT4QB4L4i6n1aEu#grid";
 	document.getElementById('click').play();
 }
 function moses(){
-	//window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1TbsYdx00e-d27UkHbuo8xkcbe828qoSi#grid";
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1TbsYdx00e-d27UkHbuo8xkcbe828qoSi#grid";
 	document.getElementById('click').play();	
 }
 function mtools(){
-	//window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1wnD5bA4X6tovffcdfwQGT5S5jZjC7i_w#grid";	
+	window.frames["yeets"].location = "https://drive.google.com/embeddedfolderview?id=1wnD5bA4X6tovffcdfwQGT5S5jZjC7i_w#grid";	
 	document.getElementById('click').play();
 }
