@@ -21,7 +21,7 @@
 			'DOS based kernel.',
 			'Digital video is a sin.',
 			'Think Different.',
-			'Its not piracy if you don\'t get caught.'
+			'Its not piracy if you don\'t get caught.',
 			'Epic Game Store Exclusive.',
 			'Press Start.',
 			'Start menu is finally real.',
