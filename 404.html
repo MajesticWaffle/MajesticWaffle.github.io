@@ -26,16 +26,21 @@
 <div id="error" class="errorcontainer" style="position:absolute; top:15vh;left:20vw; ">
 <div id="errorheader">|</div>
 </div>
-
-<div id="taskbar" style="width: 100%;position: absolute; left: 0;bottom: 0;">
-<img id="taskbarButton" onclick="test()" class="clickable" align=left>
-<img id="taskbarDetail" align=left>
-<img id="taskbarRight" align=right>
-<p id="clock" style="position:absolute; top:-3; right:8 ; text-align: center">4:20 AM</p>
-</div>
+<!--Start Menu-->
+<center>
+  <!--Taskbar-->
+  </div></div>
+  <div id="taskbar">
+  <img id="taskbarButton"  src="/images/taskbar-left.png" align=left>
+  <img id="taskbarDetail" src="/images/taskbar-detail.png" align=left>
+  <img id="taskbarRight"  src="/images/taskbar-right.png"  align=right>
+  <p id="clock">4:20 AM</p>
+  </div>
+  </center>
+  
 <script src="/javascript/clock.js"></script>
 <script src="/javascript/mobiledetect404.js"></script>
-<script src="/javascript/Startmenu.js"></script>
+
 <script>startTime();</script>
 <script>
 //Make the DIV element draggagle:

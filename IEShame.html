@@ -2,7 +2,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="/css/win98.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<title>IE Shame</title>
+<title>IEShame</title>
 	<style>
 		h1{
 			font-size: 144px;
@@ -19,14 +19,6 @@
     		margin-right: auto;
     		width: 24%;
 		}
-		body{
-			background-color: RGB(58,110,165);
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-	}
-
 	</style>
 </head>
 
@@ -34,15 +26,20 @@
 <div id="error" class="IEcontainer" style="position:absolute; top:15vh;left:20vw; ">
 <div id="errorheader">|</div>
 </div>
-<div id="taskbar" style="width: 100%;position: absolute; left: 0;bottom: 0;">
-<img id="taskbarButton" onclick="test()" class="clickable" align=left>
-<img id="taskbarDetail" align=left>
-<img id="taskbarRight" align=right>
-<p id="clock" style="position:absolute; top:-3; right:8 ; text-align: center">4:20 AM</p>
-</div>
+<!--Start Menu-->
+<center>
+  <!--Taskbar-->
+  </div></div>
+  <div id="taskbar">
+  <img id="taskbarButton"  src="/images/taskbar-left.png" align=left>
+  <img id="taskbarDetail" src="/images/taskbar-detail.png" align=left>
+  <img id="taskbarRight"  src="/images/taskbar-right.png"  align=right>
+  <p id="clock">4:20 AM</p>
+  </div>
+  </center>
+  
 <script src="/javascript/clock.js"></script>
-<script src="/javascript/mobiledetect.js"></script>
-<script src="/javascript/Startmenu.js"></script>
+
 <script>startTime();</script>
 <script>
 //Make the DIV element draggagle:
@@ -89,6 +86,6 @@ function dragElement(elmnt) {
   }
 }
 </script>
-<script>ChangeIt();</script>
+
 </body>
 </html>
