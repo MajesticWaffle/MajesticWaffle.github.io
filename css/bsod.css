@@ -6,7 +6,7 @@
 	}
 	@font-face{
 		font-family: "DOS";
-		src: url('fonts/MorePerfectDOSVGA.ttf') format('truetype');
+		src: url('../fonts/MorePerfectDOSVGA.ttf') format('truetype');
 	}
 	#errorContent > h1, p, a{
 		font-size: 18px;

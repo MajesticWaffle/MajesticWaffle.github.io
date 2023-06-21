@@ -43,7 +43,7 @@
 			'Do NOT visit a Hmm? link at 3 AM.'
 		];
 		var randomNumber = Math.floor(Math.random()*textArray.length);
-		document.getElementById("splash").textContent = "THICC.EXE - " + textArray[randomNumber];
+		document.getElementById("splash").textContent = "Thicc Industries - " + textArray[randomNumber];
 	}
-	randomSplash();
+	//randomSplash();
 	setInterval(randomSplash, 7500);// JavaScript Document
