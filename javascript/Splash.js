@@ -44,6 +44,7 @@
 		];
 		var randomNumber = Math.floor(Math.random()*textArray.length);
 		document.getElementById("splash").textContent = "Thicc Industries - " + textArray[randomNumber];
+		document.getElementById("spansplash").textContent = "Thicc Industries - " + textArray[randomNumber];
 	}
 	//randomSplash();
 	setInterval(randomSplash, 7500);// JavaScript Document

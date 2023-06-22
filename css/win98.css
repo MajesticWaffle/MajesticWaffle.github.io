@@ -95,42 +95,106 @@
 		cursor:url("data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMjHxIGmVAAAAb0lEQVQ4T5WLCQ7AIAzD+P+nO9zRrrByWQqC4JSKVDi2Ufl0oDKcDFyG3aCTYTX4yTAbpDJkg6kM42ApQxxsZbDBVKZP8snJncPjsn3aG6yz6Gcs212J/fscilbSKfHfhZgrmWSDToi5kgmSiSJSHn58TNA+RjVaAAAAAElFTkSuQmCC"), auto;
 	}
 	/*Themeing Settings*/
-	#diritem
+	#dir-games, #dir-os, #dir-tools, #dir-midi, #dir-switch
 	{
 		transform-origin: top left;
 		position: relative; 
 		top: 6px; left: 11px; 
 		padding-top: 6px; padding-bottom: 6px;
+		width: 220px; height: 32px;
+		background: no-repeat center;
 	}
 	
-	#diritem_bottom
+	#dir-home
 	{
 		transform-origin: top left;
 		position: relative; 
-		top: 0px; left: 11px; 
+		bottom: -15px; left: 11px; 
 		padding-top: 26px; padding-bottom: 6px;
+		width: 220px; height: 32px;
+		background: no-repeat center;
 	}
-	
-		
+
 	#folder{
 		width: 256px; height: 284px; bottom: 30px; left: 0px
-		}
+	}
 	
 	#itemsheader{height:21px;} /* Should match MS-UP Height */
 	
-	#MS-UP		{height:21px;}
-	#MS-LEFT	{width:3px;}
-	#MS-RIGHT	{width:3px;}
-	#MS-DOWN	{height:3px;}
+	#MS-UP{
+		background-image: url("../images/mainstretch-up.png");
+		position: absolute;
+		height:21px; width: 1%;
+		top:0;
+	}
 	
+	#MS-LEFT{
+		background-image: url("../images/mainstretch-left.png");
+		position: absolute;
+		left:0; bottom:0;
+		width:3px; height: calc(100% - 5px); 
+	}
 
+	#MS-RIGHT{
+		background-image: url("../images/mainstretch-right.png");
+		position: absolute; 
+		width:3px; height: calc(100% - 5px);
+		right:0; bottom:0;
+	}
+	
+	#MS-DOWN{
+		background-image: url("../images/mainstretch-down.png");
+		position: absolute; 
+		height:3px; width: calc(100% - 5px);
+		left: 0; bottom:0;
+	}
+	#MC-UPLEFT{
+		background-image: url("../images/maincorner-upleft.png");
+		position: absolute;
+		top: 0; left: 0;
+		width: 5px; height:21px;
+	}
+	
+	#MC-UPRIGHT{
+		background-image: url("../images/maincorner-upright.png");
+		position: absolute;
+		top: 0; right: 0;
+		width: 21px; height: 21px;
+	}
+	
+	#MC-DOWNLEFT{
+		background-image: url("../images/maincorner-downleft.png");
+		position: absolute;
+		bottom: 0; left: 0;
+		width: 3px; width: 3px;
+	}
+	
+	#MC-DOWNRIGHT{
+		background-image: url("../images/maincorner-downright.png");
+		position: absolute;
+		bottom: 0; right: 0;
+		width: 3px; width: 3px;
+	}
+
+	#dir-games{background-image: url("../icons/games.png");}
+	#dir-os{background-image: url("../icons/oses.png");}
+	#dir-tools{background-image: url("../icons/dev.png");}
+	#dir-midi{background-image: url("../icons/hmm.png");}
+	#dir-switch{background-image: url("../icons/mac.png");}
+	#dir-home{background-image: url("../icons/help.png");}
+	
 	#taskbar{background-image: url("../images/taskbar-stretch.png");}
 	
-	#taskbarButton_inactive{position: absolute; left: 0px;}
-	#taskbarButton_active{	position: absolute; left: 0px;}
-
+	#taskbarButton_inactive{background-image: url("../images/taskbar-left.png"); position: absolute; left: 0px; width: 58px; height: 28px}
+	#taskbarButton_active{background-image: url("../images/taskbar-left-pressed.png"); position: absolute; left: 0px; width: 58px; height: 28px}
+	#taskbarDetail{background-image: url("../images/taskbar-detail.png"); position: absolute; left: 58px; width: 93px; height: 28px}
+	#taskbarRight{background-image: url("../images/taskbar-right.png"); position: absolute; right: 0px; width: 86px; height: 28px}
+	
 	#taskbar{height: 100%; width: 100%; position: absolute; left: 0; bottom: 0; top: calc(100% - 30px)}
+	
+	
 	#clock{color: black; position:absolute; top:-3; right:8 ; text-align: center}
+	#spansplash{ display: none;}
 	#splash{position:absolute; top:-12px; left:8px; font-weight: normal; font-size: 16px;}
 	
 	.errorcontainer {

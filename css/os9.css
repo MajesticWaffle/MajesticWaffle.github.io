@@ -1,0 +1,244 @@
+	@font-face{
+		font-family: "CHARCOAL";
+		src: url('../fonts/CHARCOAL.ttf') format('truetype');
+	}
+	@font-face{
+		font-family: "geneva";
+		src: url('../fonts/geneva-9.ttf') format('truetype');
+	}
+	@font-face{
+		font-family: "geneva";
+		src: url('../fonts/geneva-9.ttf') format('truetype');
+	}
+	h1 {
+	
+		font-size: 6vmin;
+		color: white;
+		text-shadow: -1px 0 black, 0 1px black, 1.5px 0 black, 0 -1px black;
+	}
+	h1,h2,p{
+		color: white;
+		font-weight: bold;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+	}
+	a{
+		font-size: 3vmin;
+   	 	color: white;
+    	text-decoration: none;
+		display: block;
+
+	}
+	object{
+		object-fit: cover;
+		width: 85%;
+		height: 100%;
+	}
+	::-webkit-scrollbar { 
+		display: none; 
+	}
+	a:hover 
+	{
+    	color: white; 
+     	text-decoration:none; 
+     	cursor:pointer;  
+	}
+	#items
+	{
+		background: RGB(221, 221, 221);
+		resize: both;
+		min-width: 800;
+		min-height: 600;
+		overflow: hidden;
+		
+	}
+	.noclick
+	{
+		pointer-events: none;
+	}
+
+	#clock
+	{
+		font-size: 12px;
+		font-weight: normal;
+		font-family: CHARCOAL;
+		text-shadow: none;
+	}
+	#itemsheader
+    {
+		background-image: url("../images-mac/mainstretch-up.png"); 
+	}
+	#folder
+	{
+		background-image: url("../images-mac/win98folder.png");
+		background-repeat: no-repeat;
+	}
+	#folderborder
+	{
+	}
+	#wallpaper
+	{
+		background-image: url("../backgroundselect.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
+	#wallpaperborder
+	{
+	}
+	.clickable
+	{
+		cursor:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAMAAAD3Y3VMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJUExURf///wAAAAAAAH5RqV0AAAADdFJOU///ANfKDUEAAAAJcEhZcwAADsIAAA7CARUoSoAAAAA9SURBVBhXVcpZDgAgCAPRyv0PbRdLIh/mjQBgOsDZoDfkhv0iTjw7asWa0fsMkXP9c5nggk/trcP8rNOZC1LcANXciAYBAAAAAElFTkSuQmCC'), pointer; 
+	}
+	
+	body{
+		background-image: none;
+		background-color: RGB(221, 221, 221);
+		background-image: url("../images-mac/background.png");
+		background-size: repeat;
+		overflow: hidden;
+		cursor:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAMAAAD3Y3VMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJUExURf///wAAAAAAAH5RqV0AAAADdFJOU///ANfKDUEAAAAJcEhZcwAADsIAAA7CARUoSoAAAAA9SURBVBhXVcpZDgAgCAPRyv0PbRdLIh/mjQBgOsDZoDfkhv0iTjw7asWa0fsMkXP9c5nggk/trcP8rNOZC1LcANXciAYBAAAAAElFTkSuQmCC'), pointer; 
+	}
+	/*Themeing Settings*/
+	#dir-games, #dir-os, #dir-tools, #dir-midi, #dir-switch
+	{
+		transform-origin: top left;
+		position: relative; 
+		top: 18px; left: 0px; 
+		width: 193px; height: 18px;
+		padding-top: 0px; padding-bottom: 0px;
+		background-size:100% 100%;
+	}
+	
+	#dir-home
+	{
+		transform-origin: top left;
+		position: absolute; 
+		top: 0px; left: 0px; 
+		width: 193px; height: 20px;
+		padding-top: 0px; padding-bottom: 0px;
+		background-size:100% 100%;
+	}
+	
+		
+	#folder{
+		width: 193px; height: 113px; top: 20px; left: 17px;
+		background-size: 100% 100%;
+	}
+	
+	#itemsheader{height:22px;} /* Should match MS-UP Height */
+	
+	#MS-UP{
+		background-image: url("../images-mac/mainstretch-up.png");
+		position: absolute;
+		height:22px; width: 1%;
+		top:0;
+	}
+	
+	#MS-LEFT{
+		background-image: url("../images-mac/mainstretch-left.png");
+		position: absolute;
+		left:0; bottom:0;
+		width:6px; height: calc(100% - 6px); 
+	}
+
+	#MS-RIGHT{
+		background-image: url("../images-mac/mainstretch-right.png");
+		position: absolute; 
+		width:7px; height: calc(100% - 6px);
+		right:0; bottom:0;
+	}
+	
+	#MS-DOWN{
+		background-image: url("../images-mac/mainstretch-down.png");
+		position: absolute; 
+		height:7px; width: calc(100% - 6px);
+		left: 0; bottom:0;
+	}
+	#MC-UPLEFT{
+		background-image: url("../images-mac/maincorner-upleft.png");
+		position: absolute;
+		top: 0; left: 0;
+		width: 22px; height:22px;
+	}
+	
+	#MC-UPRIGHT{
+		background-image: url("../images-mac/maincorner-upright.png");
+		position: absolute;
+		top: 0; right: 0;
+		width: 39px; height: 22px;
+	}
+	
+	#MC-DOWNLEFT{
+		background-image: url("../images-mac/maincorner-downleft.png");
+		position: absolute;
+		bottom: 0; left: 0;
+		width: 6px; height: 7px;
+	}
+	
+	#MC-DOWNRIGHT{
+		background-image: url("../images-mac/maincorner-downright.png");
+		position: absolute;
+		bottom: 0; right: 0;
+		width: 6px; height: 6px;
+	}
+	
+	#dir-games{background-image: url("../icons-mac/games.png");}
+	#dir-os{background-image: url("../icons-mac/oses.png");}
+	#dir-tools{background-image: url("../icons-mac/dev.png");}
+	#dir-midi{background-image: url("../icons-mac/hmm.png");}
+	#dir-switch{background-image: url("../icons-mac/windows.png");}
+	#dir-home{background-image: url("../icons-mac/help.png");}
+	
+	#dir-games:hover{background-image: url("../icons-mac/games-selected.png");}
+	#dir-os:hover{background-image: url("../icons-mac/oses-selected.png");}
+	#dir-tools:hover{background-image: url("../icons-mac/dev-selected.png");}
+	#dir-midi:hover{background-image: url("../icons-mac/hmm-selected.png");}
+	#dir-switch:hover{background-image: url("../icons-mac/windows-selected.png");}
+	#dir-home:hover{background-image: url("../icons-mac/help-selected.png");}
+
+	#taskbar{background-image: url("../images-mac/taskbar-stretch.png");}
+	
+	#taskbarDetail{position:absolute; left:0px; width: 17px; height:20px; background-image: url("../images-mac/taskbar-detail.png");}
+	#taskbarButton_inactive{position: absolute; left: 17px; width:28px; height: 20px; background-image: url("../images-mac/taskbar-left.png");}
+	#taskbarButton_active{position: absolute; left: 17px; width:28px; height: 20px; background-image: url("../images-mac/taskbar-left-pressed.png");}
+	#taskbarRight{background-image: url("../images-mac/taskbar-right.png"); position: absolute; right: 0px; width: 189px; height: 20px}
+
+	#taskbar{height: 20px; width: 100%; position: absolute; left: 0; top: 0;}
+	#clock{color: black; position:absolute; top:-10; right:150; text-align: center}
+	
+	#splash{
+		display: none;
+	}
+	
+	#spansplash{
+		background-image: url("../images-mac/text-background.png");
+		background-repeat: repeat-x;
+		font-family: CHARCOAL;
+		position: relative;
+		top:0px;
+		text-align: center;
+		font-weight: normal;
+		font-size: 13px;
+		color: black; 
+		padding-left:10px; 
+		padding-right:10px;
+		vertical-align: middle;
+	}
+	
+	.errorcontainer {
+		width: 358px; /*Use this to control width of the parent container, hence the image*/
+		height: 130px;
+		background-image: url("../images-mac/new404.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
+	.IEcontainer {
+		width: 324px; /*Use this to control width of the parent container, hence the image*/
+		height: 130px;
+		background-image: url("../images-mac/newIE.png");
+		background-size:     cover;                      /* <------ */
+		background-repeat:   no-repeat;
+		background-position: top left;   
+	}
