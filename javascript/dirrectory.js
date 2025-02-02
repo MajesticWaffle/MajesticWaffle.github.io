@@ -47,15 +47,13 @@ function oses(){
 	document.getElementById('select').play();
 }
 function tools(){
-	window.frames["yeets"].location = "dev/index.html";	
+	window.location.href = "https://github.com/MajesticWaffle";	
 	document.getElementById('select').play();
 }
 function midi(){
 	var textArray = [
-			'https://megamindchan.org/legacy/',
 			'http://friendlydads.net/',
 			'https://hooooooooo.com/',
-			'https://www.templeos.org/',
 			'https://pointerpointer.com/',
 			'https://crouton.net/',
 			'https://html5zombo.com/',
