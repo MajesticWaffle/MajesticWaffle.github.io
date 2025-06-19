@@ -47,7 +47,7 @@ function oses(){
 	document.getElementById('select').play();
 }
 function tools(){
-	window.location.href = "https://github.com/MajesticWaffle";	
+	window.frames["yeets"].location = "dev/index.html";	
 	document.getElementById('select').play();
 }
 function midi(){
